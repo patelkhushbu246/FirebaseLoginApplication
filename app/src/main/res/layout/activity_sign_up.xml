@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/button_style"
+    tools:context=".SignUpActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:drawableTop="@drawable/ic_baseline_app_registration_24"
+        android:drawableTint="@color/yellow"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/dark_orange"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/email_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/light_orange"
+        android:hint=" Email"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:drawableTint="@color/yellow"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/uname_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/light_orange"
+        android:hint="Username"
+        android:drawableRight="@drawable/ic_baseline_person_outline_24"
+        android:drawableTint="@color/yellow"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/pwd_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/light_orange"
+        android:hint="Password"
+        android:drawableRight="@drawable/ic_baseline_lock_24"
+        android:drawableTint="@color/yellow"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/cpass_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/light_orange"
+        android:hint="Confirm Password"
+        android:drawableRight="@drawable/ic_baseline_visibility_24"
+        android:drawableTint="@color/yellow"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        style="@style/Widget.AppCompat.TextView"
+        android:textSize="20sp"
+        android:backgroundTint="@color/dark_orange"
+        android:background="@drawable/button_style"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/progressBarStyle"
+        android:layout_marginTop="40dp"
+        android:id="@+id/progress"
+        android:visibility="invisible"/>
+</LinearLayout>
